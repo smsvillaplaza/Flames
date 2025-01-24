@@ -1,0 +1,58 @@
+#userName, #birthday {
+  color: blue;
+}
+body {
+  margin-top: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url('flames.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.mainCon {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.input {
+  padding-bottom: 20px;
+}
+#userName, #birthday, #nameSubmit, #birthdaySubmit {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+#nameSubmit:hover, #birthdaySubmit:hover {
+  background-color: burlywood;
+  color: white;
+  transition: 0.2s;
+}
+.output {
+  width: 500px;
+  height: 275px;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#outputName, #outputBirthday, #outputAge, #outputZodiac {
+  height: 30px;
+  background-color: burlywood;
+  color: red;
+  padding: 10px;
+  border-radius: 5px;
+}

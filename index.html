@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAMES</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="mainCon">
+    <div>
+      <h1>FLAMES</h1>
+    </div>
+    <div class="input">
+      <input id="userName" type="text" placeholder="Name" required><button onclick="getName()" id="nameSubmit">Submit</button>
+      <input id="birthday" type="text" placeholder="Birthday" onmouseover="(this.type='date')" onblur="(this.type='text')" required><button onclick="getBday(); getAge(); getZodiac()" id="birthdaySubmit">Submit</button>
+    </div>
+ 
+    <div class="output">
+      <p id="outputName">Name:</p>
+      <p id="outputBirthday">Birthday:</p>
+      <p id="outputAge">Age:</p>
+      <p id="outputZodiac">Zodiac Sign:</p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
