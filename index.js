@@ -20,12 +20,19 @@ function getBday() {
   let day = date.getDate();
   let year = date.getFullYear();
 
-  outputBirthday.innerHTML = "Birthday: " + month + " " + day + "," +year;
+  outputBirthday.innerHTML = "Birthday: " + month + " " + day + ","+year;
 }
 function getAge() {
   let birthday = document.querySelector("#birthday");
   let currentDate = new Date();
-  let compValue = currentDate.getFullYear() - new Date(birthday.value).getFullYear();
+  let birthDate = new Date(birthday.value);
+  let compValue = currentDate.getFullYear() - birthDate.getFullYear();
+
+  if (currentDate.getMonth() < birthDate.getMonth() || 
+      (currentDate.getMonth() === birthDate.getMonth() && currentDate.getDate() < birthDate.getDate())) {
+    compValue--;
+  }
+
   let outputAge = document.querySelector("#outputAge");
   let ageLabel = compValue <= 1 ? "Year Old" : "Years Old";
   outputAge.innerHTML = "Age: " + compValue + " " +ageLabel;
