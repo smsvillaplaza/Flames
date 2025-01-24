@@ -20,7 +20,7 @@ function getBday() {
   let day = date.getDate();
   let year = date.getFullYear();
 
-  outputBirthday.innerHTML = "Birthday: " + month + " " + day + ", " +year;
+  outputBirthday.innerHTML = "Birthday: " + month + " " + day + "," +year;
 }
 function getAge() {
   let birthday = document.querySelector("#birthday");
